@@ -1,6 +1,6 @@
 ---
-layout: default
-title: QCM6490-KIT Development Hub
+layout: default 
+title: QCM6490-KIT Development Hub 
 ---
 
 # 🚀 QCM6490-KIT Development Hub

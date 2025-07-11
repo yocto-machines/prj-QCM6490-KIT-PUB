@@ -4,11 +4,11 @@ description: "Public data repository for Qualcomm QCM6490 Development Kit builds
 baseurl: "/prj-QCM6490-KIT-PUB"
 url: "https://yocto-machines.github.io"
 
-# Repository info
+# Repository info 
 repository: "yocto-machines/prj-QCM6490-KIT-PUB"
 github_username: yocto-machines
 
-# Build settings
+# Build settings 
 markdown: kramdown
 highlighter: rouge
 theme: minima
@@ -17,7 +17,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Exclude from processing
+# Exclude from processing 
 exclude:
   - Gemfile
   - Gemfile.lock
