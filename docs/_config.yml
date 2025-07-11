@@ -1,16 +1,101 @@
-title: "QCM6490-KIT Development Hub"
-description: "Public Documentation Portal"
+# Site settings
+title: "QCM6490-KIT Public Data"
+description: "Public data repository for Qualcomm QCM6490 Development Kit builds - Part of Yocto-Gen-Machines ecosystem"
 baseurl: "/prj-QCM6490-KIT-PUB"
 url: "https://yocto-machines.github.io"
-markdown: kramdown
 
-# Navegação
-navigation:
-  - title: "🏠 Home"
-    url: "/prj-QCM6490-KIT-PUB/docs/"
-  - title: "📊 Build Reports"
-    url: "/prj-QCM6490-KIT-PUB/reports/"
-  - title: "📋 Documentation"
-    url: "/prj-QCM6490-KIT-PUB/reports/"
-  - title: "⬇️ Downloads"
-    url: "/prj-QCM6490-KIT-PUB/downloads/"
+# Repository info
+repository: "yocto-machines/prj-QCM6490-KIT-PUB"
+github_username: yocto-machines
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Collections for organized content
+collections:
+  reports:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation menu
+header_pages:
+  - index.md
+  - reports/index.md
+  - downloads/index.md
+
+# Custom variables
+machine:
+  name: "QCM6490-KIT"
+  processor: "Qualcomm Snapdragon 778G (QCM6490)"
+  architecture: "ARM64 (Cortex-A78 + Cortex-A55)"
+
+project:
+  main_repo: "https://github.com/yocto-machines/prj-QCM6490-KIT"
+  hub_repo: "https://github.com/yocto-machines/yocto-gen-machines"
+  version: "v2.1.0"
+
+# Social and external links
+social:
+  - name: "Main Project"
+    url: "https://github.com/yocto-machines/prj-QCM6490-KIT"
+    icon: "github"
+  - name: "Yocto Hub"
+    url: "https://github.com/yocto-machines/yocto-gen-machines"
+    icon: "hub"
+  - name: "Qualcomm QCM6490"
+    url: "https://www.qualcomm.com/products/internet-of-things/industrial/gateways/qcm6490"
+    icon: "external"
+
+# Report categories
+report_types:
+  builds:
+    title: "Build Reports"
+    description: "Build status, logs, and package manifests"
+    icon: "🔨"
+  cve:
+    title: "Security Reports"
+    description: "CVE analysis and vulnerability tracking"
+    icon: "🔒"
+  licenses:
+    title: "License Reports"
+    description: "License compliance and legal information"
+    icon: "📋"
+  statistics:
+    title: "Performance Statistics"
+    description: "Build metrics and performance trends"
+    icon: "📈"
+
+# Default layout assignments
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "reports"
+      type: "pages"
+    values:
+      layout: "report"
+  - scope:
+      path: "downloads"
+      type: "pages"
+    values:
+      layout: "download"
