@@ -3,7 +3,14 @@ description: "Public Documentation Portal"
 baseurl: "/prj-QCM6490-KIT-PUB"
 url: "https://yocto-machines.github.io"
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+
+# Navegação
+navigation:
+  - title: "🏠 Home"
+    url: "/prj-QCM6490-KIT-PUB/docs/"
+  - title: "📊 Build Reports"
+    url: "/prj-QCM6490-KIT-PUB/reports/"
+  - title: "📋 Documentation"
+    url: "/prj-QCM6490-KIT-PUB/reports/"
+  - title: "⬇️ Downloads"
+    url: "/prj-QCM6490-KIT-PUB/downloads/"
