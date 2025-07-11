@@ -5,48 +5,18 @@ title: Reports Overview
 
 # 📊 Reports Overview
 
-## Available Report Categories
+## Available Reports
 
-### 🏗️ [Build Reports](builds/)
-- Build status and artifacts
-- Performance metrics
-- Build configurations
+### 🏗️ [Build Reports]({{ site.baseurl }}/reports/builds/)
+Build status and artifacts.
 
-### 📄 [License Reports](licenses/)  
-- License compliance analysis
-- Package licensing information
-- Legal compliance status
+### 📄 [License Reports]({{ site.baseurl }}/reports/licenses/)  
+License compliance analysis.
 
-### 🔒 [CVE Security Reports](cve/)
-- Security vulnerability analysis
-- CVE findings and status
-- Security compliance metrics
+### 🔒 [CVE Security Reports]({{ site.baseurl }}/reports/cve/)
+Security vulnerability analysis.
 
-### 📊 [Statistics](statistics/)
-- Build performance metrics
-- System resource usage
-- Hub-level analytics
+### 📊 [Statistics]({{ site.baseurl }}/reports/statistics/)
+Performance metrics.
 
-## 🔄 Auto-Generated Reports
-
-All reports are automatically generated via the Hub-Level GitOps pipeline.
-
-## 📋 Report Categories
-
-{% assign report_types = "builds,licenses,cve,statistics" | split: "," %}
-{% for type in report_types %}
-### {{ type | capitalize }}
-{% assign reports = site.static_files | where_exp: "file", "file.path contains type" %}
-{% if reports.size > 0 %}
-{% for report in reports limit: 5 %}
-- [{{ report.basename }}]({{ report.path }})
-{% endfor %}
-{% if reports.size > 5 %}
-- ... and {{ reports.size | minus: 5 }} more reports
-{% endif %}
-{% else %}
-- No reports available yet
-{% endif %}
-{% endfor %}
-
-[← Back to Home](../docs/)
+[← Back to Home]({{ site.baseurl }}/docs/)
