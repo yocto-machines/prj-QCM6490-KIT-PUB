@@ -7,16 +7,16 @@ title: Reports Overview
 
 ## Available Reports
 
-### 🏗️ [Build Reports]({{ site.baseurl }}/reports/builds/)
+### 🏗️ [Build Reports](builds/)
 Build status and artifacts.
 
-### 📄 [License Reports]({{ site.baseurl }}/reports/licenses/)  
+### 📄 [License Reports](licenses/)  
 License compliance analysis.
 
-### 🔒 [CVE Security Reports]({{ site.baseurl }}/reports/cve/)
+### 🔒 [CVE Security Reports](cve/)
 Security vulnerability analysis.
 
-### 📊 [Statistics]({{ site.baseurl }}/reports/statistics/)
+### 📊 [Statistics](statistics/)
 Performance metrics.
 
-[← Back to Home]({{ site.baseurl }}/docs/)
+[← Back to Home](../docs/)
