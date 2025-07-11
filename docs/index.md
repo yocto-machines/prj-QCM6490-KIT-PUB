@@ -11,50 +11,29 @@ Bem-vindo à documentação pública do **Qualcomm QCM6490 Development Kit** usa
 
 ## 🎯 Status do Projeto
 
-<div class="status-section">
-    <div class="status-grid">
-        <div class="status-item">
-            <strong>Board</strong>
-            Qualcomm QCM6490 Development Kit
-        </div>
-        <div class="status-item">
-            <strong>Yocto Version</strong>
-            Kirkstone (4.0)
-        </div>
-        <div class="status-item">
-            <strong>Repository Type</strong>
-            <span class="status-badge status-info">🌍 Public Portal</span>
-        </div>
-        <div class="status-item">
-            <strong>Migration Status</strong>
-            <span class="status-badge status-success">✅ Completed</span>
-        </div>
-    </div>
-</div>
+| Field | Value |
+|-------|-------|
+| **Board** | Qualcomm QCM6490 Development Kit |
+| **Yocto Version** | Kirkstone (4.0) |
+| **Repository Type** | 🌍 Public Portal |
+| **Migration Status** | ✅ Completed |
 
 ## 📋 Documentação Disponível
 
-<div class="quick-links">
-    <a href="/reports/" class="quick-link">
-        <h3>📊 Build Reports</h3>
-        <p>Relatórios de builds, estatísticas e métricas de performance.</p>
-    </a>
-    
-    <a href="/reports/licenses/" class="quick-link">
-        <h3>📄 License Compliance</h3>
-        <p>Relatórios de conformidade de licenças e análise legal.</p>
-    </a>
-    
-    <a href="/reports/cve/" class="quick-link">
-        <h3>🔒 Security Reports</h3>
-        <p>Análises de vulnerabilidades CVE e status de segurança.</p>
-    </a>
-    
-    <a href="/downloads/" class="quick-link">
-        <h3>⬇️ Downloads</h3>
-        <p>Links para artifacts e imagens disponíveis.</p>
-    </a>
-</div>
+### 📊 [Build Reports](../reports/builds/)
+Relatórios de builds, estatísticas e métricas de performance.
+
+### 📄 [License Compliance](../reports/licenses/)
+Relatórios de conformidade de licenças e análise legal.
+
+### 🔒 [Security Reports](../reports/cve/)
+Análises de vulnerabilidades CVE e status de segurança.
+
+### 📊 [Statistics](../reports/statistics/)
+Métricas detalhadas de build e performance.
+
+### ⬇️ [Downloads](../downloads/)
+Links para artifacts e imagens disponíveis.
 
 ## 🏗️ Hub Architecture Migration
 
@@ -65,13 +44,13 @@ Este portal foi **migrado** para a nova arquitetura hub:
 ↓ (GitHub Pages)
 📱 Public Website
 
-### 🔄 Migration Benefits
+## 🔄 Migration Benefits
 
-- **🔒 Security**: Separation of development and documentation
-- **🏗️ Organization**: Hub structure with public/ and layers/
-- **📊 Compliance**: Public reports for stakeholders
-- **🚀 Scalability**: Template for other machines
-- **🔄 Automation**: Continued GitOps integration
+* **🔒 Security**: Separation of development and documentation
+* **🏗️ Organization**: Hub structure with public/ and layers/
+* **📊 Compliance**: Public reports for stakeholders  
+* **🚀 Scalability**: Template for other machines
+* **🔄 Automation**: Continued GitOps integration
 
 ## 📊 Quick Start
 
@@ -83,11 +62,17 @@ cd /workdir
 ./scripts/enter-qcm6490-build.sh
 bitbake core-image-minimal
 
-# Upload and sync (will be updated for new architecture)
-./layers/projects/prj-QCM6490-KIT/scripts/machines/qcm6490-kit/qcm6490_upload_script.sh
+# Upload and sync (hub-level)
+./scripts/machines/qcm6490-kit/qcm6490_upload_script.sh
 ```
 
----
+📋 Latest Reports
+Recent Activity
+
+View All Build Reports
+View All CVE Reports
+View All License Reports
+View All Statistics
 
 
-Public documentation portal | Hub architecture | Dark Mode 🌙
+Public documentation portal - Hub architecture - Dark Mode 🌙
