@@ -1,0 +1,33 @@
+title: "QCM6490-KIT Development Hub"
+description: "Public documentation for Qualcomm QCM6490 Development Kit - Yocto Project"
+baseurl: ""
+url: "https://yocto-machines.github.io/prj-QCM6490-KIT-PUB"
+
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  reports:
+    output: true
+    permalink: /:collection/:name/
+
+navigation:
+  - title: Home
+    url: /
+  - title: Build Reports
+    url: /reports/
+  - title: Documentation
+    url: /docs/
+  - title: Downloads
+    url: /downloads/
+
+# Migration info
+repository_type: "public_documentation"
+source_repo: "private_development"
+migration_date: "$(date +%Y-%m-%d)"
