@@ -1,21 +1,32 @@
-# .gitignore para prj-QCM6490-KIT
+# .gitignore para prj-QCM6490-KIT-PUB (Public Repository)
 
-# Build artifacts (não trackear no Git)
+# Este é um repositório PUBLIC - diferentes regras do projeto principal
+
+# Build artifacts temporários (se houver builds locais)
 build*/
 tmp/
 deploy/
 *.log
 *.tmp
 
-# Yocto build files
+# Yocto build files (NÃO aplicável ao repo PUB, mas mantido por compatibilidade)
 bitbake.lock
 pseudo/
 cache/
-downloads/
+# downloads/ - REMOVIDO! No repo PUB, downloads/ contém documentação
 sstate-cache/
 
+# Downloads: Permitir documentação, bloquear arquivos grandes
+downloads/*.img
+downloads/*.wic
+downloads/*.tar.gz
+downloads/*.ext4
+downloads/*.bin
+downloads/*.iso
+# Permitir: downloads/*.md, downloads/*.json, downloads/*.html
+
 # Jekyll build
-_site/_site/
+_site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
@@ -33,12 +44,26 @@ Thumbs.db
 # Backup files
 *.backup
 
-# Reports são trackeados, mas alguns temporários não
-_reports/**/tmp/
-_reports/**/*.tmp
+# Reports são trackeados (este é o propósito principal do repo PUB!)
+# _reports/**/tmp/ - REMOVIDO! Queremos trackear todos os reports
+# _reports/**/*.tmp - REMOVIDO! 
 
 # Secrets (nunca commitar)
 *.key
 *.pem
 secrets.yml
 .env.local
+
+# Arquivos grandes que podem aparecer acidentalmente
+*.img
+*.wic
+*.tar.gz
+*.ext4
+*.bin
+*.iso
+# Exceto se estiverem em locais específicos para documentação
+
+# Logs de processo automático (se houver)
+automation.log
+upload.log
+sync.log
