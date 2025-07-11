@@ -34,51 +34,53 @@ description: "Comprehensive public repository for Qualcomm QCM6490 Development K
 
 <div class="feature-grid">
 
-### 📊 Build Reports & Analytics
-Comprehensive build status, logs, and performance metrics automatically generated from our CI/CD pipeline.
+<div>
+<h3>📊 Build Reports & Analytics</h3>
+<p>Comprehensive build status, logs, and performance metrics automatically generated from our CI/CD pipeline.</p>
+<ul>
+<li><strong>Build Status</strong>: Real-time success/failure tracking</li>
+<li><strong>Performance Metrics</strong>: Build time trends and resource usage</li>
+<li><strong>Package Manifests</strong>: Complete dependency lists and versions</li>
+<li><strong>Size Analysis</strong>: Rootfs optimization and component breakdown</li>
+</ul>
+<p><a href="{{ '/reports/builds/' | relative_url }}">📈 View Build Reports</a></p>
+</div>
 
-- **Build Status**: Real-time success/failure tracking
-- **Performance Metrics**: Build time trends and resource usage
-- **Package Manifests**: Complete dependency lists and versions
-- **Size Analysis**: Rootfs optimization and component breakdown
+<div>
+<h3>🔒 Security & Compliance</h3>
+<p>Complete security analysis and vulnerability tracking for all build components.</p>
+<ul>
+<li><strong>CVE Analysis</strong>: Known vulnerabilities and mitigation status</li>
+<li><strong>Security Patches</strong>: Applied fixes and update recommendations</li>
+<li><strong>Attack Surface</strong>: Exposed services and security posture</li>
+<li><strong>Compliance Reports</strong>: Framework adherence and audit trails</li>
+</ul>
+<p><a href="{{ '/reports/cve/' | relative_url }}">🛡️ View Security Reports</a></p>
+</div>
 
-**[📈 View Build Reports]({{ '/reports/builds/' | relative_url }})**
+<div>
+<h3>📋 License Information</h3>
+<p>Detailed legal compliance reports for all included software packages.</p>
+<ul>
+<li><strong>License Inventory</strong>: Complete list of package licenses</li>
+<li><strong>Compliance Status</strong>: GPL, LGPL, Apache, MIT verification</li>
+<li><strong>Source Availability</strong>: Direct links to source code repositories</li>
+<li><strong>Legal Review</strong>: Pre-approved license combinations</li>
+</ul>
+<p><a href="{{ '/reports/licenses/' | relative_url }}">⚖️ View License Reports</a></p>
+</div>
 
----
-
-### 🔒 Security & Compliance
-Complete security analysis and vulnerability tracking for all build components.
-
-- **CVE Analysis**: Known vulnerabilities and mitigation status
-- **Security Patches**: Applied fixes and update recommendations  
-- **Attack Surface**: Exposed services and security posture
-- **Compliance Reports**: Framework adherence and audit trails
-
-**[🛡️ View Security Reports]({{ '/reports/cve/' | relative_url }})**
-
----
-
-### 📋 License Information
-Detailed legal compliance reports for all included software packages.
-
-- **License Inventory**: Complete list of package licenses
-- **Compliance Status**: GPL, LGPL, Apache, MIT verification
-- **Source Availability**: Direct links to source code repositories
-- **Legal Review**: Pre-approved license combinations
-
-**[⚖️ View License Reports]({{ '/reports/licenses/' | relative_url }})**
-
----
-
-### 📥 Download Center
-Direct access to build artifacts via Google Drive integration with automated uploads.
-
-- **Latest Images**: Minimal and development rootfs images
-- **System Components**: Kernel, bootloader, and device tree files
-- **Installation Guides**: Step-by-step flashing instructions
-- **Version History**: Complete artifact changelog
-
-**[📦 Access Downloads]({{ '/downloads/' | relative_url }})**
+<div>
+<h3>📥 Download Center</h3>
+<p>Direct access to build artifacts via Google Drive integration with automated uploads.</p>
+<ul>
+<li><strong>Latest Images</strong>: Minimal and development rootfs images</li>
+<li><strong>System Components</strong>: Kernel, bootloader, and device tree files</li>
+<li><strong>Installation Guides</strong>: Step-by-step flashing instructions</li>
+<li><strong>Version History</strong>: Complete artifact changelog</li>
+</ul>
+<p><a href="{{ '/downloads/' | relative_url }}">📦 Access Downloads</a></p>
+</div>
 
 </div>
 
@@ -113,23 +115,35 @@ Direct access to build artifacts via Google Drive integration with automated upl
 
 <div class="stats-dashboard">
 
-### 🔨 Build Performance
-- **Last Build**: January 11, 2025 at 13:44 UTC
-- **Build Status**: ✅ **Success** (95% success rate last 30 builds)
-- **Build Time**: 3.2 hours average
-- **Artifact Size**: ~150MB (minimal), ~800MB (development)
+<div>
+<h3>🔨 Build Performance</h3>
+<ul>
+<li><strong>Last Build</strong>: January 11, 2025 at 13:44 UTC</li>
+<li><strong>Build Status</strong>: ✅ <strong>Success</strong> (95% success rate last 30 builds)</li>
+<li><strong>Build Time</strong>: 3.2 hours average</li>
+<li><strong>Artifact Size</strong>: ~150MB (minimal), ~800MB (development)</li>
+</ul>
+</div>
 
-### 🔒 Security Status  
-- **CVE Status**: ✅ **No Critical Vulnerabilities**
-- **Last Scan**: January 11, 2025
-- **Patch Level**: Up to date with latest security fixes
-- **Compliance**: ✅ **Fully Compliant**
+<div>
+<h3>🔒 Security Status</h3>
+<ul>
+<li><strong>CVE Status</strong>: ✅ <strong>No Critical Vulnerabilities</strong></li>
+<li><strong>Last Scan</strong>: January 11, 2025</li>
+<li><strong>Patch Level</strong>: Up to date with latest security fixes</li>
+<li><strong>Compliance</strong>: ✅ <strong>Fully Compliant</strong></li>
+</ul>
+</div>
 
-### 📦 Available Downloads
-- **Core Images**: 2 variants (minimal, development)
-- **Components**: Kernel, bootloader, device trees
-- **Total Artifacts**: 12 files (~950MB total)
-- **Google Drive**: ✅ **Auto-sync enabled**
+<div>
+<h3>📦 Available Downloads</h3>
+<ul>
+<li><strong>Core Images</strong>: 2 variants (minimal, development)</li>
+<li><strong>Components</strong>: Kernel, bootloader, device trees</li>
+<li><strong>Total Artifacts</strong>: 12 files (~950MB total)</li>
+<li><strong>Google Drive</strong>: ✅ <strong>Auto-sync enabled</strong></li>
+</ul>
+</div>
 
 </div>
 
@@ -155,7 +169,7 @@ yocto-gen-machines (Private)
 
 ## 🌐 Part of Yocto-Gen-Machines Ecosystem
 
-This repository serves as the **public data hub** for QCM6490-KIT builds from the larger [Yocto-Gen-Machines]({{ site.project.hub_repo }}) infrastructure:
+This repository serves as the **public data hub** for QCM6490-KIT builds from the larger [Yocto-Gen-Machines]({{ site.project.hub_repo }}) infrastructure.
 
 ### 🔗 Related Projects
 - **[Main Development]({{ site.project.main_repo }})**: Private repository with Yocto layers and build scripts
@@ -197,12 +211,6 @@ QCM6490-KIT serves as a **proof of concept** for public data distribution that w
 - **📖 [Documentation]({{ site.project.main_repo }})**: Technical guides and tutorials
 - **🏠 [Main Project]({{ site.project.main_repo }})**: Development repository
 
-### Stay Updated
-- **GitHub Pages**: Automatic updates from build pipeline
-- **Release Notes**: Version history and changelog
-- **Security Alerts**: CVE notifications and patches
-- **Community**: Join discussions and contribute improvements
-
 ---
 
 <div class="footer-cta">
@@ -216,220 +224,3 @@ QCM6490-KIT serves as a **proof of concept** for public data distribution that w
 </div>
 
 *Last updated: January 11, 2025 - Automatically generated from build pipeline*
-
-<style>
-/* Hero Section */
-.hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.hero-content h2 {
-  margin: 0 0 1rem 0;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  margin: 0 0 2rem 0;
-  opacity: 0.9;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-/* Feature Grid */
-.feature-grid {
-  display: grid;
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.feature-grid > div {
-  border: 1px solid #e1e8ed;
-  padding: 2rem;
-  border-radius: 8px;
-  background-color: #f8f9fa;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.feature-grid > div:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.feature-grid h3 {
-  color: #2c3e50;
-  margin-top: 0;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 0.5rem;
-}
-
-.feature-grid a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #3498db;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.2s;
-}
-
-.feature-grid a:hover {
-  background-color: #2980b9;
-}
-
-/* Architecture Overview */
-.architecture-overview {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  padding: 2rem;
-  margin: 3rem 0;
-}
-
-.architecture-overview h3 {
-  color: #2c3e50;
-  margin-top: 2rem;
-}
-
-.architecture-overview h3:first-child {
-  margin-top: 0;
-}
-
-/* Stats Dashboard */
-.stats-dashboard {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.stats-dashboard > div {
-  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-  color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-
-.stats-dashboard h3 {
-  margin: 0 0 1rem 0;
-  color: white;
-}
-
-.stats-dashboard ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.stats-dashboard li {
-  padding: 0.25rem 0;
-  opacity: 0.9;
-}
-
-/* Footer CTA */
-.footer-cta {
-  background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
-  color: #2d3436;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  text-align: center;
-  margin: 3rem 0;
-}
-
-.footer-cta h3 {
-  margin: 0 0 1rem 0;
-  color: #2d3436;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: all 0.2s;
-}
-
-.btn-primary {
-  background-color: #2d3436;
-  color: white;
-}
-
-.btn-secondary {
-  background-color: #74b9ff;
-  color: white;
-}
-
-.btn-outline {
-  background-color: transparent;
-  color: #2d3436;
-  border: 2px solid #2d3436;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-  
-  .hero-description {
-    font-size: 1rem;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn {
-    width: 200px;
-  }
-}
-</style>

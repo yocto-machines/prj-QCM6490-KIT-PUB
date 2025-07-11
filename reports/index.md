@@ -12,47 +12,53 @@ Welcome to the QCM6490-KIT reports center. Here you'll find comprehensive inform
 
 <div class="report-grid">
 
-### 🔨 Build Reports
-**Latest build status and detailed logs**
-- Build success/failure status
-- Compilation logs and error analysis
-- Package manifests and dependency trees
-- Build artifacts and size analysis
+<div>
+<h3>🔨 Build Reports</h3>
+<p><strong>Latest build status and detailed logs</strong></p>
+<ul>
+<li>Build success/failure status</li>
+<li>Compilation logs and error analysis</li>
+<li>Package manifests and dependency trees</li>
+<li>Build artifacts and size analysis</li>
+</ul>
+<p><a href="./builds/">📁 View Build Reports</a> | <a href="./builds/latest.html">📄 Latest Build</a></p>
+</div>
 
-[📁 View Build Reports](./builds/) | [📄 Latest Build](./builds/latest.html)
+<div>
+<h3>🔒 Security Reports</h3>
+<p><strong>CVE analysis and vulnerability tracking</strong></p>
+<ul>
+<li>Known vulnerabilities assessment</li>
+<li>Security patches and updates</li>
+<li>Attack surface analysis</li>
+<li>Compliance status reports</li>
+</ul>
+<p><a href="./cve/">🛡️ View Security Reports</a> | <a href="./cve/latest.html">🔍 Latest CVE Analysis</a></p>
+</div>
 
----
+<div>
+<h3>📋 License Reports</h3>
+<p><strong>Legal compliance and license information</strong></p>
+<ul>
+<li>Complete license inventory</li>
+<li>GPL/LGPL/Apache/MIT compliance</li>
+<li>Source code availability</li>
+<li>Legal review summaries</li>
+</ul>
+<p><a href="./licenses/">⚖️ View License Reports</a> | <a href="./licenses/latest.html">📜 Latest License Report</a></p>
+</div>
 
-### 🔒 Security Reports  
-**CVE analysis and vulnerability tracking**
-- Known vulnerabilities assessment
-- Security patches and updates
-- Attack surface analysis
-- Compliance status reports
-
-[🛡️ View Security Reports](./cve/) | [🔍 Latest CVE Analysis](./cve/latest.html)
-
----
-
-### 📋 License Reports
-**Legal compliance and license information**
-- Complete license inventory
-- GPL/LGPL/Apache/MIT compliance
-- Source code availability
-- Legal review summaries
-
-[⚖️ View License Reports](./licenses/) | [📜 Latest License Report](./licenses/latest.html)
-
----
-
-### 📈 Performance Statistics
-**Build metrics and performance trends**
-- Build time trends
-- Resource usage analysis
-- Artifact size tracking
-- Success rate metrics
-
-[📊 View Statistics](./statistics/) | [📈 Latest Stats](./statistics/latest.html)
+<div>
+<h3>📈 Performance Statistics</h3>
+<p><strong>Build metrics and performance trends</strong></p>
+<ul>
+<li>Build time trends</li>
+<li>Resource usage analysis</li>
+<li>Artifact size tracking</li>
+<li>Success rate metrics</li>
+</ul>
+<p><a href="./statistics/">📊 View Statistics</a> | <a href="./statistics/latest.html">📈 Latest Stats</a></p>
+</div>
 
 </div>
 
@@ -90,20 +96,32 @@ Each report includes:
 
 <div class="action-grid">
 
-### 🔍 Find Specific Information
-- [Search all reports](./search.html)
-- [Filter by date range](./filter.html)
-- [Compare builds](./compare.html)
+<div>
+<h3>🔍 Find Specific Information</h3>
+<ul>
+<li><a href="./search.html">Search all reports</a></li>
+<li><a href="./filter.html">Filter by date range</a></li>
+<li><a href="./compare.html">Compare builds</a></li>
+</ul>
+</div>
 
-### 📥 Download Data
-- [Export latest reports](./export.html)
-- [API access documentation](./api.html)
-- [Raw data files](./raw.html)
+<div>
+<h3>📥 Download Data</h3>
+<ul>
+<li><a href="./export.html">Export latest reports</a></li>
+<li><a href="./api.html">API access documentation</a></li>
+<li><a href="./raw.html">Raw data files</a></li>
+</ul>
+</div>
 
-### 📊 Analytics
-- [Trend analysis](./trends.html)
-- [Performance dashboards](./dashboards.html)
-- [Custom queries](./queries.html)
+<div>
+<h3>📊 Analytics</h3>
+<ul>
+<li><a href="./trends.html">Trend analysis</a></li>
+<li><a href="./dashboards.html">Performance dashboards</a></li>
+<li><a href="./queries.html">Custom queries</a></li>
+</ul>
+</div>
 
 </div>
 
@@ -139,57 +157,3 @@ Each report includes:
 ---
 
 *Reports automatically updated from build pipeline. Last refresh: {{ latest_date }} 13:44 UTC*
-
-<style>
-.report-grid > div {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.report-grid h3 {
-    color: #2c3e50;
-    margin-top: 0;
-}
-
-.action-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin: 2rem 0;
-}
-
-.action-grid > div {
-    border: 1px solid #3498db;
-    padding: 1rem;
-    border-radius: 6px;
-    background-color: #ecf0f1;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 0.75rem;
-    text-align: left;
-}
-
-table th {
-    background-color: #3498db;
-    color: white;
-}
-
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.status-success { color: #27ae60; font-weight: bold; }
-.status-warning { color: #f39c12; font-weight: bold; }
-.status-error { color: #e74c3c; font-weight: bold; }
-</style>

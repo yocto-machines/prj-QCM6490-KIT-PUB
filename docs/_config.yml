@@ -82,7 +82,7 @@ report_types:
     description: "Build metrics and performance trends"
     icon: "📈"
 
-# Default layout assignments
+# Default layout assignments - CORRIGIDO para usar "default"
 defaults:
   - scope:
       path: ""
@@ -93,9 +93,9 @@ defaults:
       path: "reports"
       type: "pages"
     values:
-      layout: "report"
+      layout: "default"  # ← MUDADO de "report" para "default"
   - scope:
       path: "downloads"
       type: "pages"
     values:
-      layout: "download"
+      layout: "default"  # ← MUDADO de "download" para "default"
