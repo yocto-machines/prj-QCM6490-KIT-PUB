@@ -1,5 +1,6 @@
 title: QCM6490-KIT Development Portal
 description: Yocto Project development portal for Qualcomm QCM6490 Development Kit
+baseurl: /prj-QCM6490-KIT-PUB
 url: https://yocto-machines.github.io
 
 # Jekyll settings (GitHub Actions compatible)
