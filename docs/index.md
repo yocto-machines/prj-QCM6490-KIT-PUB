@@ -43,7 +43,7 @@ description: "Comprehensive public repository for Qualcomm QCM6490 Development K
 <li><strong>Package Manifests</strong>: Complete dependency lists and versions</li>
 <li><strong>Size Analysis</strong>: Rootfs optimization and component breakdown</li>
 </ul>
-<p><a href="{{ '/reports/builds/' | relative_url }}">📈 View Build Reports</a></p>
+### [📈 View Build Reports](reports/builds/)
 </div>
 
 <div>
@@ -55,7 +55,7 @@ description: "Comprehensive public repository for Qualcomm QCM6490 Development K
 <li><strong>Attack Surface</strong>: Exposed services and security posture</li>
 <li><strong>Compliance Reports</strong>: Framework adherence and audit trails</li>
 </ul>
-<p><a href="{{ '/reports/cve/' | relative_url }}">🛡️ View Security Reports</a></p>
+### [🛡️ View Security Reports](reports/cve/)
 </div>
 
 <div>
@@ -67,7 +67,7 @@ description: "Comprehensive public repository for Qualcomm QCM6490 Development K
 <li><strong>Source Availability</strong>: Direct links to source code repositories</li>
 <li><strong>Legal Review</strong>: Pre-approved license combinations</li>
 </ul>
-<p><a href="{{ '/reports/licenses/' | relative_url }}">⚖️ View License Reports</a></p>
+### [⚖️ View License Reports](reports/licenses/)
 </div>
 
 <div>
@@ -79,7 +79,7 @@ description: "Comprehensive public repository for Qualcomm QCM6490 Development K
 <li><strong>Installation Guides</strong>: Step-by-step flashing instructions</li>
 <li><strong>Version History</strong>: Complete artifact changelog</li>
 </ul>
-<p><a href="{{ '/downloads/' | relative_url }}">📦 Access Downloads</a></p>
+### [📦 Access Downloads](downloads/)
 </div>
 
 </div>
@@ -186,19 +186,19 @@ QCM6490-KIT serves as a **proof of concept** for public data distribution that w
 ## 🚀 Quick Start Guide
 
 ### For Developers
-1. **[Check Build Status]({{ '/reports/builds/' | relative_url }})** - Verify latest build success
-2. **[Review Security]({{ '/reports/cve/' | relative_url }})** - Assess vulnerability status
-3. **[Download Images]({{ '/downloads/' | relative_url }})** - Get development artifacts
+1. **[Check Build Status](reports/builds/)** - Verify latest build success
+2. **[Review Security](reports/cve/)** - Assess vulnerability status
+3. **[Download Images](downloads/)** - Get development artifacts
 4. **Flash & Test** - Deploy to QCM6490-KIT hardware
 
 ### For System Integrators  
-1. **[License Review]({{ '/reports/licenses/' | relative_url }})** - Verify legal compliance
-2. **[Performance Analysis]({{ '/reports/statistics/' | relative_url }})** - Check system metrics
-3. **[Download Production Images]({{ '/downloads/' | relative_url }})** - Get deployment-ready builds
+1. **[License Review](reports/licenses/)** - Verify legal compliance
+2. **[Performance Analysis](reports/statistics/)** - Check system metrics
+3. **[Download Production Images](downloads/)** - Get deployment-ready builds
 4. **Integration** - Incorporate into larger systems
 
 ### For Researchers
-1. **[Explore Reports]({{ '/reports/' | relative_url }})** - Analyze build and security data
+1. **[Explore Reports](reports/)** - Analyze build and security data
 2. **[Study Architecture]({{ site.project.hub_repo }})** - Review development methodology
 3. **[Access Source]({{ site.project.main_repo }})** - Examine Yocto layer implementation
 4. **[Contribute]({{ site.project.main_repo }}/issues)** - Report findings and improvements
@@ -217,8 +217,8 @@ QCM6490-KIT serves as a **proof of concept** for public data distribution that w
   <h3>🎯 Ready to Get Started?</h3>
   <p>Explore the latest QCM6490-KIT builds and start developing with cutting-edge mobile processor technology.</p>
   <div class="cta-buttons">
-    <a href="{{ '/reports/' | relative_url }}" class="btn btn-primary">📊 View Reports</a>
-    <a href="{{ '/downloads/' | relative_url }}" class="btn btn-secondary">📥 Download Images</a>
+    <a href="reports/" class="btn btn-primary">📊 View Reports</a>
+    <a href="downloads/" class="btn btn-secondary">📥 Download Images</a>
     <a href="{{ site.project.main_repo }}" class="btn btn-outline">🔧 Development Repo</a>
   </div>
 </div>

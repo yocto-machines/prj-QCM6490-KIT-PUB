@@ -1,0 +1,34 @@
+title: QCM6490-KIT Development Portal
+description: Yocto Project development portal for Qualcomm QCM6490 Development Kit
+baseurl: /prj-QCM6490-KIT-PUB
+url: https://yocto-machines.github.io
+
+# GitHub Pages settings
+source: docs
+destination: _site
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Site variables
+project:
+  hub_repo: https://github.com/yocto-machines/yocto-gen-machines
+  main_repo: https://github.com/yocto-machines/prj-QCM6490-KIT
+
+# Include and exclude
+include:
+  - .htaccess
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.backup.*"
