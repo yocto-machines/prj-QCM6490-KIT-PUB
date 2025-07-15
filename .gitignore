@@ -67,3 +67,6 @@ secrets.yml
 automation.log
 upload.log
 sync.log
+!docs/
+!docs/reports/
+!docs/reports/builds/
