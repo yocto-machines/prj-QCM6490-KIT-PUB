@@ -6,92 +6,106 @@ description: Download QCM6490-KIT build artifacts and system images
 
 # 📥 Downloads Center
 
-Direct access to QCM6490-KIT build artifacts via Google Drive integration with automated uploads.
+Direct access to QCM6490-KIT build artifacts via Google Drive integration.
 
-## 🚀 Latest Stable Release (v2.1.0)
+<div class="download-hero">
+<h2>🚀 Latest Stable Release (v2.1.0)</h2>
+<p><em>Last updated: July 11, 2025 - Build: 134416</em></p>
+</div>
 
-*Last updated: July 11, 2025 - Build: 134416*
+## 📱 Core Images
 
-### 📱 Core Images
+<div class="download-grid">
 
-- **[core-image-minimal](https://drive.google.com/drive/folders/1g8h9J2kL3m4N5o6P7q8R9s0T1u2V3w4X)** (~150MB)
-  - Minimal bootable system for QCM6490-KIT
-  - Essential packages only
-  - Perfect for production deployment
+<div class="download-item">
+<h3>📦 Minimal Image</h3>
+<p><strong>core-image-minimal</strong> (~150MB)</p>
+<ul>
+<li>Minimal bootable system for QCM6490-KIT</li>
+<li>Essential packages only</li>
+<li>Perfect for production deployment</li>
+</ul>
+<p><a href="https://drive.google.com/drive/folders/1g8h9J2kL3m4N5o6P7q8R9s0T1u2V3w4X" class="download-btn">📥 Download</a></p>
+</div>
 
-- **[core-image-development](https://drive.google.com/drive/folders/1A2b3C4d5E6f7G8h9I0j1K2l3M4n5O6p)** (~800MB)
-  - Full development environment
-  - Debugging tools and utilities
-  - Recommended for development
+<div class="download-item">
+<h3>🛠️ Development Image</h3>
+<p><strong>core-image-development</strong> (~800MB)</p>
+<ul>
+<li>Full development environment</li>
+<li>Debugging tools and utilities</li>
+<li>Recommended for development</li>
+</ul>
+<p><a href="https://drive.google.com/drive/folders/1g8h9J2kL3m4N5o6P7q8R9s0T1u2V3w4X" class="download-btn">📥 Download</a></p>
+</div>
 
-### 🔧 System Components
+</div>
 
-- **[Kernel Image](https://drive.google.com/drive/folders/1X2y3Z4a5B6c7D8e9F0g1H2i3J4k5L6m)** (~15MB)
-  - Linux kernel 6.1.x for QCM6490
-  - Device tree binaries included
-  - Optimized for Snapdragon 778G
+## 🔧 System Components
 
-- **[U-Boot Bootloader](https://drive.google.com/drive/folders/1Q2w3E4r5T6y7U8i9O0p1A2s3D4f5G6h)** (~1MB)
-  - Custom U-Boot with critical fixes
-  - QCM6490-KIT specific patches
-  - Ready for SD card/eMMC
+<div class="download-grid">
 
-### 📦 Additional Packages
+<div class="download-item">
+<h3>🐧 Kernel Image</h3>
+<p><strong>Linux Kernel 6.1.x</strong> (~15MB)</p>
+<ul>
+<li>Optimized for Snapdragon 778G</li>
+<li>Device tree binaries included</li>
+<li>QCM6490-specific patches</li>
+</ul>
+<p><a href="https://drive.google.com/drive/folders/1g8h9J2kL3m4N5o6P7q8R9s0T1u2V3w4X" class="download-btn">📥 Download</a></p>
+</div>
 
-- **[SDK Toolchain](https://drive.google.com/drive/folders/1Z2x3C4v5B6n7M8q9W0e1R2t3Y4u5I6o)** (~2GB)
-  - Complete cross-compilation toolchain
-  - Headers and libraries included
-  - For application development
+<div class="download-item">
+<h3>🚀 U-Boot Bootloader</h3>
+<p><strong>Custom U-Boot</strong> (~1MB)</p>
+<ul>
+<li>QCM6490-KIT specific patches</li>
+<li>Critical fixes applied</li>
+<li>Ready for SD card/eMMC</li>
+</ul>
+<p><a href="https://drive.google.com/drive/folders/1g8h9J2kL3m4N5o6P7q8R9s0T1u2V3w4X" class="download-btn">📥 Download</a></p>
+</div>
+
+<div class="download-item">
+<h3>🔨 SDK Toolchain</h3>
+<p><strong>Cross-compilation Tools</strong> (~2GB)</p>
+<ul>
+<li>Complete development environment</li>
+<li>Headers and libraries included</li>
+<li>For application development</li>
+</ul>
+<p><a href="https://drive.google.com/drive/folders/1g8h9J2kL3m4N5o6P7q8R9s0T1u2V3w4X" class="download-btn">📥 Download</a></p>
+</div>
+
+</div>
 
 ---
 
 ## 📂 Google Drive Structure
 
-Our artifacts are organized in Google Drive for easy access:
-
-```
+<div class="folder-structure">
+<pre>
 📁 Artifacts-Yocto-Gen-Machines/
 ├── 📁 RELEASES/
 │   └── 📁 v2.1.0/
 │       └── 📁 images/
 │           └── 📁 qcm6490kit/
-│               ├── 📁 core-image-minimal-qcm6490/
-│               │   ├── 📄 core-image-minimal-qcm6490kit.wic.gz
-│               │   ├── 📄 Image-qcm6490kit.bin
-│               │   ├── 📄 u-boot-qcm6490kit.bin
-│               │   ├── 📄 qcm6490-kit.dtb
-│               │   └── 📄 modules-qcm6490kit.tgz
-│               │
-│               └── 📁 core-image-development-qcm6490/
-│                   ├── 📄 core-image-development-qcm6490kit.wic.gz
-│                   ├── 📄 Image-qcm6490kit.bin
-│                   ├── 📄 u-boot-qcm6490kit.bin
-│                   ├── 📄 qcm6490-kit.dtb
-│                   ├── 📄 modules-qcm6490kit.tgz
-│                   └── 📁 sdk/
-│                       └── 📄 aarch64-qcm6490-toolchain.sh
-```
-
-## 🔗 Quick Access Links
-
-### 🎯 Most Downloaded
-1. **[Minimal Image](https://drive.google.com/drive/folders/1g8h9J2kL3m4N5o6P7q8R9s0T1u2V3w4X)** - Ready-to-flash system
-2. **[Development Image](https://drive.google.com/drive/folders/1A2b3C4d5E6f7G8h9I0j1K2l3M4n5O6p)** - Full development environment
-3. **[SDK Toolchain](https://drive.google.com/drive/folders/1Z2x3C4v5B6n7M8q9W0e1R2t3Y4u5I6o)** - Cross-compilation tools
-
-### 📋 Documentation
-- **[Installation Guide](../reports/)** - Complete flashing instructions
-- **[Build Reports](../reports/builds/)** - Detailed build information
-- **[Security Analysis](../reports/cve/)** - Vulnerability assessments
-
----
+│               ├── 📄 core-image-minimal-qcm6490kit.wic.gz
+│               ├── 📄 core-image-development-qcm6490kit.wic.gz
+│               ├── 📄 Image-qcm6490kit.bin
+│               ├── 📄 u-boot-qcm6490kit.bin
+│               ├── 📄 qcm6490-kit.dtb
+│               └── 📄 modules-qcm6490kit.tgz
+</pre>
+</div>
 
 ## 🛠️ Installation Quick Start
 
 ### 📱 For QCM6490-KIT Hardware
 
 1. **Download** the minimal image
-2. **Extract** the .wic.gz file
+2. **Extract** the .wic.gz file  
 3. **Flash** to SD card using `dd` or balenaEtcher
 4. **Boot** your QCM6490-KIT
 
@@ -100,39 +114,25 @@ Our artifacts are organized in Google Drive for easy access:
 sudo dd if=core-image-minimal-qcm6490kit.wic of=/dev/sdX bs=1M status=progress
 ```
 
-### 🔧 For Development
-
-1. **Download** development image + SDK
-2. **Install** SDK toolchain
-3. **Set up** cross-compilation environment
-4. **Start** developing applications
-
-```bash
-# Install SDK
-chmod +x aarch64-qcm6490-toolchain.sh
-./aarch64-qcm6490-toolchain.sh
-
-# Source environment
-source /opt/aarch64-qcm6490/environment-setup-aarch64-qcm6490-linux
-```
-
 ---
 
 ## 📊 Download Statistics
 
 - **Total Downloads**: 1,247 this month
-- **Most Popular**: core-image-minimal (78% of downloads)
+- **Most Popular**: core-image-minimal (78% of downloads)  
 - **Average Size**: 485MB per download
 - **Update Frequency**: Weekly builds, monthly releases
 
 ---
 
-## ⚠️ Important Notes
-
-- **Compatibility**: These images are specifically built for QCM6490-KIT hardware
-- **Support**: For issues, please check our [reports](../reports/) or create an issue
-- **Updates**: Subscribe to releases for automatic notifications
-- **License**: All software follows respective component licenses - see [License Reports](../reports/licenses/)
+<div class="download-note">
+<h3>⚠️ Important Notes</h3>
+<ul>
+<li><strong>Compatibility</strong>: Images are specifically built for QCM6490-KIT hardware</li>
+<li><strong>Support</strong>: For issues, check our <a href="../reports/">reports</a> or create an issue</li>
+<li><strong>License</strong>: All software follows component licenses - see <a href="../reports/licenses/">License Reports</a></li>
+</ul>
+</div>
 
 ---
 

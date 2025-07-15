@@ -8,6 +8,12 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
+# Minima theme configuration
+minima:
+  skin: dark
+  social_links:
+    github: yocto-machines
+
 # Build settings
 plugins:
   - jekyll-feed
@@ -18,9 +24,14 @@ project:
   hub_repo: https://github.com/yocto-machines/yocto-gen-machines
   main_repo: https://github.com/yocto-machines/prj-QCM6490-KIT
 
+# Custom CSS
+sass:
+  sass_dir: assets/css
+
 # Include and exclude
 include:
   - .htaccess
+  - assets/css/custom.css
 exclude:
   - README.md
   - Gemfile
@@ -28,10 +39,3 @@ exclude:
   - node_modules
   - vendor
   - "*.backup.*"
-# Custom CSS
-header_pages:
-  - docs/index.md
-
-# Additional styling
-minima:
-  skin: dark
