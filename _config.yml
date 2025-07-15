@@ -28,3 +28,10 @@ exclude:
   - node_modules
   - vendor
   - "*.backup.*"
+# Custom CSS
+header_pages:
+  - docs/index.md
+
+# Additional styling
+minima:
+  skin: dark
